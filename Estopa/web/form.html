@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Calia posar algun comentari -->
+        <meta charset="utf-8">
+        <meta name="author" content="Mario Leon">
+        <meta name="description" content="M8-UF5">
+        <meta name="keywords" content="HTML,SMX,estopa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <title>Estopa</title>
+    </head>
+    <body>
+        <header>
+            <img src="../img/header.png">
+        </header>
+        <nav class="main-navbar">
+            <ul class="navbar-container">
+                <li class="logo">
+                    <a href="./index.html" class="navbar-link">
+                        <img aria-hidden="true" focusable="false" data-prefix="fas"
+                        class="fa-primary" role="img" src="../img/pagina-de-inicio.png" viewBox="0 0 512 512"> 
+                        <span class="link-text">Inicio</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./tienda.html" class="navbar-link">
+                        <img aria-hidden="true" focusable="false" data-prefix="fas"
+                        class="fa-primary" role="img" src="../img/tienda.png" viewBox="0 0 512 512"> 
+                        <span class="link-text">Tienda</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./ubicacion.html" class="navbar-link">
+                        <img aria-hidden="true" focusable="false" data-prefix="fas"
+                        class="fa-primary" role="img" src="../img/ubicacion.png" viewBox="0 0 512 512"> 
+                        <span class="link-text">Ubicacion</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./form.html" class="navbar-link">
+                        <img aria-hidden="true" focusable="false" data-prefix="fas"
+                        class="fa-primary" role="img" src="../img/votacion.png" viewBox="0 0 512 512"> 
+                        <span class="link-text">Encuesta</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+            <main>
+                <h2>
+                    Enquesta de Satisfaccion
+                </h2>
+                <h3>
+                    Su opinion importa
+                </h3>
+                <form action="./validaquesta.php" method="POST">
+                    <p class="raul">
+                      <label  for="email"><b>Email</b></label>
+                      <input id="email" type="text" placeholder="Introduce tu email" name="uname" required>
+                    </p>
+                    <p class="der">
+                        <label  for="nom"><b>Nombre</b></label>
+                        <input id="nom" type="text" placeholder="Introduce tu nombre complet" name="uname" required>
+                      </p>
+                      <br>
+                      <br>
+                      <br>
+                    <p class="raul">
+                      <label for="inPuntuacion"><b>Puntuación General</b></label>
+                      <input id="inPuntuacion" name="puntuacion" type="number" min="0" max="10" step="1" value="5" required>
+                    </p>
+                    <p class="der">
+                        <label for="valoracionGlobal"><b>Valoracion General</b></label>
+                        <select name="valoracionGlobal">
+                            <option value="Excelent">Excelente</option>
+                            <option value="Notable">Muy Buena</option>
+                            <option value="Bona" selected>Buena</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Dolenta">Mala</option>
+                        </select>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="der">
+                            <h3>¿Recomendaria la pagina?</h3>
+                            <p>
+                                <input id="in1" name="reco" value="yes" type="radio" required checked>
+                                <label for="in2">Si</label>
+                            </p>
+                            <p>
+                                <input id="inA" name="reco" value="no" type="radio">
+                                <label for="inB">No</label>
+                            </p>
+                    </div>
+                    <div class="raul">
+                            <h3>¿Volveria a comprar?</h3>
+                            <p>
+                              <input id="in1" name="compra" value="yes" type="radio"  required checked>
+                              <label for="in2">Si</label>
+                            </p>
+                            <p>
+                              <input id="inA" name="compra" value="no" type="radio">
+                              <label for="inB">No</label>
+                            </p>
+                    </div> 
+                    <br><br><br><br><br><br><br>
+                    <p class="obs">
+                        <h3><b>Observaciones:</b></h3>
+                        <textarea name="observaciones" rows="10" cols="75">
+                        </textarea>
+                    </p>
+                    <p class="obs">
+                        <button type="submit">Enviar el Formulario</button>
+                        <input value="Limpia el Formulario" type="reset">
+                    </p>
+                    <h4>
+                    <p>
+                    Gracias por hacer la encuesta!
+                    </p>
+                    <p>
+                    Cualquier opinion siempre es bienvenida!
+                    </p>
+                    </h4>
+                    
+                </form>
+            </main> 
+            <footer>
+            
+                <aside>
+                <img class="a" src="../img/header2.png"  height="100vh">
+                <p><img src="../img/correo.png" height="15vh">estopa@contacto.com</p>
+                <p><img src="../img/tel.png" height="15vh">682 94 02 39</p>
+                <p><img src="../img/ubicacion.png" height="15vh">Plaça Josep Maluquer i Salvador, 19, 08401 Granollers, Barcelona</p>
+                <p>℗2021 Estopa</p>
+                </aside>
+    
+            </footer>
+        </body>
+    </html>
